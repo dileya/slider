@@ -37,11 +37,12 @@ h3 {
     font-family: Open Sans;
     font-style: italic;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 16px;
     text-align: center;
     color: #fff;
     padding-top: 20px;
+    padding-left: 35px;
 }
 .info {
     font-family: Open Sans;
@@ -52,7 +53,19 @@ line-height: 19px;
 text-align: right;
 padding-top: 30px;
 position: relative;
-left: 70%;
+left: 76%;
+}
+@media screen and (min-width:1440px){
+.info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    padding-top: 70px;
+    position: relative;
+    left: -10%;
+}
 }
 @-webkit-keyframes slideInRight {
     from {
@@ -111,9 +124,10 @@ h4 {
     line-height: 28px;
 }
 
-#logo {
+#logo, #logo2{
     position: relative;
-    top: -20px;
+    top: -26%;
+    left: 50%;
 }
 
 h5 {
@@ -165,7 +179,7 @@ h6 {
     position: absolute;
     left: 13%;
     bottom: 4px;
-    width: 80%;
+    width: 68%;
     height: 1px;
     background: $clright;
 }
@@ -179,7 +193,32 @@ h6 {
     height: 1px;
     background: $clr;
 }
-
+@media screen and (min-width: 1441px) {
+    .line {
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .line:after {
+        content: '';
+        position: absolute;
+        left: 11%;
+        width: 46%;
+        bottom: 4px;
+        height: 1px;
+        background: $clright;
+    }
+    
+    .line:before {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        height: 1px;
+        background: $clr;
+        right: 78%;
+    width: 20%;
+    }
+}
 .gallery {
     margin-top: 10px;
 }
@@ -230,7 +269,7 @@ li:hover {
 
 .container {
     max-width: 1920px;
-    height: 1080px;
+    height: 950px;
     overflow: hidden;
 }
 
@@ -238,7 +277,7 @@ li:hover {
     overflow: hidden;
     z-index: 0;
     max-width: 1920px;
-    height: 1080px;
+    height: 950px;
     background: url("images/bkg.png") 50% 100% no-repeat;
     background-size: cover;
     animation: zoomout 2s forwards ease-in-out;
@@ -399,7 +438,7 @@ li:hover {
 .fadeIn {
     opacity: 0;
     padding-right: 55px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .fadeIn1 {
@@ -439,6 +478,17 @@ li:hover {
 
 #home {
     margin-top: 100px;
+}
+@media screen and (min-width: 1441px) {
+    #home {
+        margin-top: 200px;
+    }
+}
+.navbar-panel {
+    
+        position: relative;
+        left: 9%;
+    
 }
 
 .black {
